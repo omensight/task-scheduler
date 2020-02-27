@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Time Scheduler</string>
+    <string name="schedule_create_schedule">Schedule name</string>
+    <string name="schedule_start_time">Start time</string>
+    <string name="validate">Validate</string>
+    <string name="error_field_required">Field required</string>
+    <string name="schedule_start_time_with_dots">Start time:</string>
+    <string name="term_duration">Duration:</string>
+    <string name="term_start">Start</string>
+    <string name="term_end">End</string>
+    <string name="term_hours">Hours</string>
+    <string name="term_minutes">Minutes</string>
+    <string name="term_seconds">Seconds</string>
+    <string name="add">Add</string>
+</resources>

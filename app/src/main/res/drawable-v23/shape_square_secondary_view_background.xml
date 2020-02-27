@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:color="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="NewApi">
+    <item android:id="@android:id/mask">
+        <shape app:tint="@android:color/white">
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape app:tint="@color/colorSecondaryViewBackground">
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+     <!-- normal color -->
+</ripple>

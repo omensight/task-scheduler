@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Time Scheduler</string>
+    <string name="schedule_create_schedule">Crear programa</string>
+    <string name="schedule_start_time">Inicio de programa</string>
+    <string name="validate">Validar</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="schedule_start_time_with_dots">Inicio de programa:</string>
+    <string name="term_duration">Duración:</string>
+    <string name="term_start">Inicio</string>
+    <string name="term_end">Fin</string>
+    <string name="term_hours">Horas</string>
+    <string name="term_minutes">Minutos</string>
+    <string name="term_seconds">Segundos</string>
+    <string name="add">Añadir</string>
+</resources>

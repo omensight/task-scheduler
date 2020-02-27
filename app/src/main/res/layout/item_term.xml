@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_square_secondary_view_background"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:elevation="4dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_duration_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/term_duration"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="48 minutes"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_duration_indicator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_start_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/term_start"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_duration_indicator" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="13:48"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_start_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_duration_indicator"
+        app:layout_constraintTop_toBottomOf="@+id/tv_duration_indicator" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_end_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/term_end"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_indicator" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="13:53"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_end_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_duration_indicator"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_indicator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

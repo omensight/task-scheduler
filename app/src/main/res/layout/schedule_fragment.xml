@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="This"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_start_indicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/schedule_start_time_with_dots"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="20:31"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_start_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_start_indicator"
+        app:layout_constraintTop_toTopOf="@+id/tv_start_indicator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_term_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_term_durations_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_indicator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/ll_term_durations_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_term_hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_term_hours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/term_hours"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_term_minutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_term_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:hint="@string/term_minutes"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_term_seconds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_term_seconds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:hint="@string/term_seconds"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_add"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add"
+            app:backgroundTint="@color/colorAccent"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

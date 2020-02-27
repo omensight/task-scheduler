@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondaryText</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="titleTextColor">@color/colorPrimaryText</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Base.Widget.MaterialComponents.TextView.Title">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+</resources>
